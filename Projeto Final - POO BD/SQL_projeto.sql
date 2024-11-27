@@ -1,8 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS Integracao DEFAULT CHARACTER SET utf8;
 USE Integracao;
 
--- drop database integracao;
-
 CREATE TABLE IF NOT EXISTS Filme (
   idFilme INT NOT NULL AUTO_INCREMENT,
   titulo VARCHAR(45) NOT NULL,
@@ -90,7 +88,3 @@ CREATE TABLE IF NOT EXISTS Ingresso (
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-select * from shopping;
-select * from cinema;
-select * from sala;
